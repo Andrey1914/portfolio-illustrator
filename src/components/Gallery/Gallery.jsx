@@ -1,127 +1,73 @@
-import { List, Title } from "./Gallery.styled";
+import { Container, List, Element, Title, Img, ImgBig } from "./Gallery.styled";
+import pic1 from "../../jpg/девочка-на-дереве.jpg";
+import pic2 from "../../jpg/девочка-на-подоконнике.jpg";
+import pic3 from "../../jpg/девочка.jpg";
+import pic4 from "../../jpg/бабушка.jpg";
+import pic5 from "../../jpg/школьники.jpg";
+import pic6 from "../../jpg/дружная-семейка.jpg";
+import pic7 from "../../jpg/семья-собралась-вместе.jpg";
+import pic8 from "../../jpg/поросята.jpg";
+import pic9 from "../../jpg/медведи.jpg";
+import pic10 from "../../jpg/девочка-гуляет-с-собакой.jpg";
+import pic11 from "../../jpg/дядя.jpg";
+import pic12 from "../../jpg/ежики.jpg";
+import pic13 from "../../jpg/ленивец.jpg";
+import pic14 from "../../jpg/выдуманный-персонаж.jpg";
+import pic15 from "../../jpg/bear-d2x.jpg";
 
 export default function Gallery() {
   return (
     <section className="section gallery">
-      <div className="container">
+      <Container>
         <Title>Pleasant viewing</Title>
         <List>
-          <li className="gallery__item">
-            <img
-              src="../../jpg/девочка-на-дереве.jpg"
-              className="gallery__image"
-              alt="девочка на дереве"
-            />
-          </li>
-          <li className="gallery__item">
-            <img
-              src="./jpg/девочка-на-подоконнике.jpg"
-              className="gallery__image"
-              alt="девочка на подоконнике"
-            />
-          </li>
-          <li className="gallery__item">
-            <img
-              src="./jpg/девочка.jpg"
-              className="gallery__image"
-              alt="девочка"
-            />
-          </li>
-          <li className="gallery__item">
-            <img
-              src="./jpg/бабушка.jpg"
-              className="gallery__image"
-              alt="бабушка.jpg"
-            />
-          </li>
-          <li className="gallery__item gallery__item--diferent">
-            <img
-              src="./jpg/школьники.jpg"
-              className="gallery__image gallery__image--big"
-              alt="школьники"
-            />
-          </li>
-          <li className="gallery__item gallery__item--diferent">
-            <img
-              src="./jpg/дружная-семейка.jpg"
-              className="gallery__image gallery__image--big"
-              alt="дружная семейка"
-            />
-          </li>
-          <li className="gallery__item gallery__item--diferent">
-            <img
-              src="./jpg/семья-собралась-вместе.jpg"
-              className="gallery__image gallery__image--big"
-              alt="семья собралась вместе"
-            />
-          </li>
-          <li className="gallery__item">
-            <img
-              src="./jpg/поросята.jpg"
-              className="gallery__image"
-              alt="поросята"
-            />
-          </li>
-          <li className="gallery__item">
-            <img
-              src="./jpg/медведи.jpg"
-              className="gallery__image"
-              alt="медведи"
-            />
-          </li>
-          <li className="gallery__item">
-            <img
-              src="./jpg/девочка-гуляет-с-собакой.jpg"
-              className="gallery__image"
-              alt="девочка гуляет с собакой"
-            />
-          </li>
-          <li className="gallery__item">
-            <img src="./jpg/дядя.jpg" className="gallery__image" alt="дядя" />
-          </li>
-          <li className="gallery__item">
-            <img src="./jpg/ежики.jpg" className="gallery__image" alt="ежики" />
-          </li>
-          <li className="gallery__item">
-            <img
-              src="./jpg/ленивец.jpg"
-              className="gallery__image"
-              alt="ленивец"
-            />
-          </li>
-          <li className="gallery__item gallery__item--diferent">
-            <img
-              src="./jpg/выдуманный-персонаж.jpg"
-              className="gallery__image gallery__image--big"
-              alt="выдуманный персонаж"
-            />
-          </li>
-          <li className="gallery__item">
-            <picture>
-              <source
-                media="(max-width: 767px)"
-                srcSet="./jpg/bear-m1x.jpg 1x, ./jpg/bear-m2x.jpg 2x"
-              />
-
-              <source
-                media="(max-width: 1199px)"
-                srcSet="./jpg/bear-t1x.jpg 1x, ./jpg/bear-t2x.jpg 2x"
-              />
-
-              <source
-                media="(min-width: 1200px)"
-                srcSet="./jpg/bear-d1x.jpg 1x, ./jpg/bear-d2x.jpg 2x"
-              />
-
-              <img
-                src="./jpg/bear-m1x.jpg"
-                className="gallery__image"
-                alt="bear"
-              />
-            </picture>
-          </li>
+          <Element>
+            <Img src={pic1} alt="девочка на дереве" />
+          </Element>
+          <Element>
+            <Img src={pic2} alt="девочка на подоконнике" />
+          </Element>
+          <Element>
+            <Img src={pic3} alt="девочка" />
+          </Element>
+          <Element>
+            <Img src={pic4} alt="бабушка.jpg" />
+          </Element>
+          <Element>
+            <Img src={pic15} alt="bear" />
+          </Element>
+          <Element>
+            <ImgBig src={pic5} alt="школьники" />
+          </Element>
+          <Element>
+            <ImgBig src={pic6} alt="дружная семейка" />
+          </Element>
+          <Element>
+            <ImgBig src={pic7} alt="семья собралась вместе" />
+          </Element>
+          <Element>
+            <Img src={pic8} alt="поросята" />
+          </Element>
+          <Element>
+            <Img src={pic9} alt="медведи" />
+          </Element>
+          <Element>
+            <Img src={pic10} alt="девочка гуляет с собакой" />
+          </Element>
+          <Element>
+            <Img src={pic11} alt="дядя" />
+          </Element>
+          <Element>
+            <Img src={pic12} alt="ежики" />
+          </Element>
+          <Element>
+            <Img src={pic13} alt="ленивец" />
+          </Element>
+          <Element>
+            <ImgBig src={pic14} alt="выдуманный персонаж" />
+          </Element>
         </List>
-      </div>
+      </Container>
     </section>
   );
 }

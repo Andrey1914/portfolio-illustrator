@@ -1,5 +1,6 @@
-import { Item, Link, List, Title, Wrap } from "./Header.styled";
-import logo from "./logo.svg";
+import { Item, Link, List, Title, Wrap, Img } from "./Header.styled";
+import logo from "../../jpg/photo_2021-12-08_22-34-32.jpg";
+import pic from "../../jpg/циплята.jpg";
 
 export default function Header() {
   return (
@@ -8,7 +9,8 @@ export default function Header() {
         <img src={logo} className="App-logo" alt="logo" />
         <Title>Illustrator Tania Proskurnia</Title>
       </Wrap>
-      <img className="img" src="/" alt="illustrator" />
+      <Img src={pic} alt="illustrator" />
+
       <nav>
         <List>
           <Item>

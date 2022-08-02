@@ -13,15 +13,13 @@ export const Title = styled.h2`
 export const List = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  gap: 30px;
   margin: 0;
   padding: 0;
   list-style: none;
 `;
 
 export const Element = styled.li`
-  flex-basis: calc((100% - 6 * 15px) / 3);
-  margin: 15px;
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {

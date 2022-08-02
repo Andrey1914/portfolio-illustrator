@@ -20,25 +20,27 @@ export const List = styled.ul`
   list-style: none;
   display: flex;
   justify-content: center;
+  gap: 20px;
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 `;
 
 export const Item = styled.li`
-  padding: 5px;
+  padding: 8px;
   border-radius: 20px;
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-    background-color: tomato;
+    background-color: #cccccc;
     cursor: pointer;
     transform: scale(1.1);
-  }
-  &:not(:last-child) {
-    margin-right: 20px;
   }
 `;
 
 export const Link = styled.a`
   text-decoration: none;
+  display: flex;
+  gap: 5px;
+  color: black;
+}
 `;

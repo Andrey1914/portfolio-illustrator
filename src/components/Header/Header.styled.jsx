@@ -26,21 +26,22 @@ export const List = styled.ul`
   margin-bottom: 20px;
 `;
 
-export const Item = styled.li`
+export const Button = styled.button`
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
   padding: 8px;
   border-radius: 20px;
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: black;
+  border: none;
+  background-color: #ffffff;
+  
   &:hover {
     background-color: #cccccc;
     cursor: pointer;
     transform: scale(1.1);
   }
-`;
-
-export const Link = styled.a`
-  text-decoration: none;
-  display: flex;
-  gap: 5px;
-  color: black;
 }
 `;

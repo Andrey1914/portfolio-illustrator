@@ -1,53 +1,35 @@
-import { Copyright, List } from "./Footer.styled";
+import { Copyright, Link, List, Wrap } from "./Footer.styled";
+import { FaInstagramSquare, FaTelegramPlane, FaViber } from "react-icons/fa";
+import { ImFacebook2 } from "react-icons/im";
 
 export default function Footer() {
   return (
     <footer>
-      <Copyright>&copy;</Copyright>
-      <div className="social-links">
+      <Wrap>
+        <Copyright>&copy;</Copyright>
         <List>
-          <li className="social-links__item">
-            <a
-              className="social-links__link"
-              href="https://instagram.com/tania.proskurnia?utm_medium=copy_link"
-            >
-              <svg className="social-links__icon">
-                <use href="./icon/icons.svg#icon-instagram-icon"></use>
-              </svg>
-            </a>
+          <li>
+            <Link href="https://instagram.com/tania.proskurnia?utm_medium=copy_link">
+              <FaInstagramSquare size={30} />
+            </Link>
           </li>
-          <li className="social-links__item">
-            <a
-              className="social-links__link"
-              href="https://www.facebook.com/tania.proskurnia"
-            >
-              <svg className="social-links__icon">
-                <use href="./icon/icons.svg#icon-fb-icon"></use>
-              </svg>
-            </a>
+          <li>
+            <Link href="https://www.facebook.com/tania.proskurnia">
+              <ImFacebook2 size={27} />
+            </Link>
           </li>
-          <li className="social-links__item">
-            <a
-              className="social-links__link"
-              href="https://t.me/Tania_Proskurnia"
-            >
-              <svg className="social-links__icon">
-                <use href="./icon/icons.svg#icon-telegram-icon"></use>
-              </svg>
-            </a>
+          <li>
+            <Link href="https://t.me/Tania_Proskurnia">
+              <FaTelegramPlane size={30} />
+            </Link>
           </li>
-          <li className="social-links__item">
-            <a
-              className="social-links__link"
-              href="viber://chat?number=+380934846750"
-            >
-              <svg className="social-links__icon">
-                <use href="./icon/icons.svg#icon-viber-icon"></use>
-              </svg>
-            </a>
+          <li>
+            <Link href="viber://chat?number=+380934846750">
+              <FaViber size={30} />
+            </Link>
           </li>
         </List>
-      </div>
+      </Wrap>
     </footer>
   );
 }

@@ -43,12 +43,13 @@ export default function Header() {
         title="A little about myself."
         content={
           <p>
-            Hello! My name is Tania. I am from Ukraine. I love painting and
-            since // early years I have been honing my skills, first at a
-            children's art // school, then at the university. I worked in an art
-            workshop. I love // reading stories and conveying my feelings in
-            illustrations, thus // giving people new emotions. I draw both
-            digitally and using // traditional media.
+            Hello! <br />
+            My name is Tania. I am from Ukraine. I love painting and since early
+            years I have been honing my skills, first at a children's art
+            school, then at the university. I worked in an art workshop. I love
+            reading stories and conveying my feelings in illustrations, thus
+            giving people new emotions. I draw both digitally and using
+            traditional media.
           </p>
         }
         footer={<button>Cancel</button>}

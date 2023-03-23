@@ -1,5 +1,5 @@
 import React from "react";
-// import pic from "../../jpg/tania-proskurnia.jpg";
+import pic from "../../jpg/tania-proskurnia.jpg";
 
 // export default function About() {
 //   return (
@@ -50,6 +50,7 @@ export const Modal = ({
           </button>
         </div>
         <div className="modal-body">
+          <img src={pic} alt="" width="320px" />
           <div className="modal-content">{content}</div>
         </div>
         {footer && <div className="modal-footer">{footer}</div>}

@@ -1,13 +1,12 @@
 import React from "react";
 import { Modal } from "../AboutInfo/AboutInfo";
-import { Button, List, Title, Wrap, Img } from "./Header.styled";
+import { Button, List, Title, Wrap } from "./Header.styled";
 import {
   HiOutlineIdentification,
   HiOutlineHome,
   HiOutlineMail,
 } from "react-icons/hi";
 import logo from "../../jpg/photo_2021-12-08_22-34-32.jpg";
-import pic from "../../jpg/циплята.jpg";
 
 export default function Header() {
   const [isModal, setModal] = React.useState(false);
@@ -55,7 +54,6 @@ export default function Header() {
         footer={<button>Cancel</button>}
         onClose={() => setModal(false)}
       />
-      <Img src={pic} alt="циплята" />
     </header>
   );
 }

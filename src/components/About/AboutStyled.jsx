@@ -10,19 +10,37 @@ export const AboutHeader = styled.div`
 
 export const AboutTitle = styled.h2`
   font-family: "Bad Script";
-  font-size: 32px;
+  font-size: 18px;
+  line-height: 1.5;
   font-weight: 400;
   text-align: right;
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    font-size: 24px;
+  }
 `;
 
 export const AboutBody = styled.div`
   display: flex;
-  gap: 50px;
+  flex-direction: column;
+  gap: 1rem;
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    flex-direction: row;
+    gap: 3rem;
+  }
+`;
+
+export const Photo = styled.img`
+  width: 200px;
+  height: auto;
 `;
 
 export const AboutContent = styled.div`
   font-family: "Bad Script";
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.5;
   font-weight: 400;
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    font-size: 24px;
+  }
 `;

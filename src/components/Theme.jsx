@@ -22,9 +22,9 @@ export const theme = {
     secondary: "#4353ff",
   },
   breakpoints: {
-    lg: "64rem",
-    md: "58.125rem",
-    sm: "48rem",
-    xs: "31.25rem",
+    lg: "1280px",
+    md: "768px",
+    sm: "567px",
+    xs: "320px",
   },
 };

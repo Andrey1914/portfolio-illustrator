@@ -4,6 +4,7 @@ import {
   AboutHeader,
   AboutTitle,
   AboutBody,
+  Photo,
   AboutContent,
 } from "./AboutStyled";
 import { Section, Container } from "../LayoutStyled";
@@ -17,7 +18,7 @@ export const About = () => {
             <AboutTitle>A little about myself.</AboutTitle>
           </AboutHeader>
           <AboutBody>
-            <img src={pic} alt="Illustrator Tania Proskurnia" width="320px" />
+            <Photo src={pic} alt="Illustrator Tania Proskurnia" width="300px" />
             <AboutContent>
               Hello! <br />
               My name is Tania. I am from Ukraine. I love painting and since

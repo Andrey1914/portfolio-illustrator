@@ -1,12 +1,16 @@
 import styled from "styled-components";
 
 export const StickFollowIcon = styled.div`
-  top: 20%;
-  left: 30px;
+  top: 45%;
+  left: 0.5rem;
   width: 20px;
   height: 200px;
   position: fixed;
   margin-top: -100px;
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    top: 20%;
+    left: 30px;
+  }
 `;
 
 export const SocialIconList = styled.ul`

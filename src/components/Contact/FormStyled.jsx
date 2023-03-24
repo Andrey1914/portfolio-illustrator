@@ -28,44 +28,56 @@ export const FormSpan = styled.span`
 `;
 
 export const FormInput = styled.input`
-  padding: 1rem;
-  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
   background: transparent;
   border: 1px solid rgba(0, 60, 103, 0.4);
   resize: none;
   color: #000;
   font-family: "Montserrat";
-  font-size: 1rem;
+  font-size: 0.8rem;
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+  }
 `;
 
 export const FormTextarea = styled.textarea`
-  padding: 1rem;
-  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
   background: transparent;
   border: 1px solid rgba(0, 60, 103, 0.4);
   resize: none;
   color: #000;
   font-family: "Montserrat";
-  font-size: 1rem;
+  font-size: 0.8rem;
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
 `;
 
 export const Button = styled.button`
   width: max-content;
   display: inline-block;
-  /* color: #4db5ff; */
-  padding: 0.75rem 1.2rem;
+  padding: 0.5rem 1rem;
   border-radius: 0.4rem;
   cursor: pointer;
   border: 1px solid rgba(0, 60, 103, 0.4);
   transition: all 400ms ease;
-  background-color: #004678;
+  background-color: rgba(0, 0, 0, 0.3);
   color: #fff;
   margin: 0 auto;
   font-family: "Montserrat";
-  font-size: 1rem;
+  font-size: 0.8rem;
   :hover {
-    background-color: #009c05;
+    background-color: #1f1f38;
     color: #fff;
     border-color: transparent;
+  }
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    padding: 0.75rem 1.2rem;
+    font-size: 1rem;
   }
 `;

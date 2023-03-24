@@ -5,21 +5,11 @@ export const Wrap = styled.div`
 `;
 
 export const Copyright = styled.p`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 16px;
-  text-align: center;
+  text-align: left;
   margin: 0;
   margin-bottom: 30px;
-`;
-
-export const List = styled.ul`
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-`;
-
-export const Link = styled.a`
-  color: black;
 `;

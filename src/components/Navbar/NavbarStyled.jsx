@@ -7,9 +7,9 @@ export const NavbarContainer = styled.nav`
   padding: 0.7rem 1.7rem;
   z-index: 2;
   position: fixed;
-  left: 100%;
-  transform: translateX(-120%);
-  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1rem;
   display: flex;
   gap: 0.8rem;
   border-radius: 3rem;

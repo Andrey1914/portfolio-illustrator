@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import { AiOutlineHome } from "react-icons/ai";
-import { AiOutlineUser } from "react-icons/ai";
-// import { BiBook } from "react-icons/bi";
-import { RiServiceLine } from "react-icons/ri";
-import { BiMessageSquareDetail } from "react-icons/bi";
+import { AiOutlineUser, AiOutlineHome } from "react-icons/ai";
+import { BsImages } from "react-icons/bs";
+import { BiMailSend } from "react-icons/bi";
 import { NavbarContainer, NavLink } from "./NavbarStyled";
 
 export const Navbar = () => {
@@ -25,26 +23,20 @@ export const Navbar = () => {
       >
         <AiOutlineUser />
       </NavLink>
-      {/* <NavLink
-        href="#experience"
-        onClick={() => setActiveNav("#experience")}
-        className={activeNav === "#experience" ? "active" : ""}
-      >
-        <BiBook />
-      </NavLink> */}
+
       <NavLink
-        href="#portfolio"
+        href="#gallery"
         onClick={() => setActiveNav("#portfolio")}
         className={activeNav === "#portfolio" ? "active" : ""}
       >
-        <RiServiceLine />
+        <BsImages />
       </NavLink>
       <NavLink
         href="#contact"
         onClick={() => setActiveNav("#contact")}
         className={activeNav === "#contact" ? "active" : ""}
       >
-        <BiMessageSquareDetail />
+        <BiMailSend />
       </NavLink>
     </NavbarContainer>
   );

@@ -1,7 +1,10 @@
 import React from "react";
 import Footer from "./Footer/Footer";
 import Gallery from "./Gallery/Gallery";
-// import Header from "./Header/Header";
+import { Form } from "./Contact/Form";
+import { About } from "./About/About";
+import Header from "./Header/Header";
+import { SocialIcons } from "./SocialMedia/SocialIcon";
 import { Navbar } from "./Navbar/Navbar";
 import GlobalStyles from "./GlobalStyles";
 import { ThemeProvider } from "styled-components";
@@ -13,8 +16,11 @@ function App() {
       <>
         <GlobalStyles />
         <Navbar />
-        {/* <Header /> */}
+        <SocialIcons />
+        <Header />
         <Gallery />
+        <About />
+        <Form />
         <Footer />
       </>
     </ThemeProvider>

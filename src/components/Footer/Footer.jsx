@@ -1,34 +1,21 @@
-import { Copyright, Link, List, Wrap } from "./Footer.styled";
-import { FaInstagramSquare, FaTelegramPlane, FaViber } from "react-icons/fa";
-import { ImFacebook2 } from "react-icons/im";
+import { Copyright, Wrap } from "./Footer.styled";
+import { BsGithub } from "react-icons/bs";
 
 export default function Footer() {
+  const year = new Date().getFullYear();
   return (
     <footer>
       <Wrap>
-        <Copyright>&copy;</Copyright>
-        <List>
-          <li>
-            <Link href="https://instagram.com/tania.proskurnia?utm_medium=copy_link">
-              <FaInstagramSquare size={30} />
-            </Link>
-          </li>
-          <li>
-            <Link href="https://www.facebook.com/tania.proskurnia">
-              <ImFacebook2 size={27} />
-            </Link>
-          </li>
-          <li>
-            <Link href="https://t.me/Tania_Proskurnia">
-              <FaTelegramPlane size={30} />
-            </Link>
-          </li>
-          <li>
-            <Link href="viber://chat?number=+380934846750">
-              <FaViber size={30} />
-            </Link>
-          </li>
-        </List>
+        <Copyright>
+          &copy; Copyright {year} by
+          <a
+            href="https://github.com/Andrey1914"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <BsGithub size={24} />
+          </a>
+        </Copyright>
       </Wrap>
     </footer>
   );

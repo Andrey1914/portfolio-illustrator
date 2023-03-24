@@ -52,7 +52,6 @@ export default function Header() {
             traditional media.
           </p>
         }
-        footer={<button>Cancel</button>}
         onClose={() => setModal(false)}
       />
     </header>

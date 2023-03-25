@@ -18,8 +18,8 @@ function App() {
         <Navbar />
         <SocialIcons />
         <Header />
-        <Gallery />
         <About />
+        <Gallery />
         <Form />
         <Footer />
       </>

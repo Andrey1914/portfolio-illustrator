@@ -23,16 +23,21 @@ export const AboutBody = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin: 0 auto;
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
     flex-direction: row;
     gap: 3rem;
+    width: calc(100% - 300px);
   }
 `;
 
 export const Photo = styled.img`
   width: 200px;
   height: auto;
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    width: 300px;
+  }
 `;
 
 export const AboutContent = styled.div`

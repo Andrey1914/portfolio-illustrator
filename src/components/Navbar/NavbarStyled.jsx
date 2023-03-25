@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const NavbarContainer = styled.nav`
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 60, 103, 0.4);
+  border: 2px solid rgba(0, 60, 103, 0.1);
   width: max-content;
   display: block;
   padding: 0.7rem 1.7rem;
@@ -13,7 +14,7 @@ export const NavbarContainer = styled.nav`
   display: flex;
   gap: 0.8rem;
   border-radius: 3rem;
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(3px);
 `;
 
 export const NavLink = styled.a`
@@ -23,11 +24,12 @@ export const NavLink = styled.a`
   display: flex;
   color: rgba(255, 255, 255, 0.6);
   font-size: 1.1rem;
+  transition: all 400ms ease;
   :hover {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 60, 103, 0.4);
   }
   :active {
-    background: #1f1f38;
+    background: rgba(0, 60, 103, 0.6);
     color: #fff;
   }
 `;

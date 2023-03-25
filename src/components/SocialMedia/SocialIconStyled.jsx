@@ -8,8 +8,8 @@ export const StickFollowIcon = styled.div`
   position: fixed;
   margin-top: -100px;
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
-    top: 20%;
-    left: 30px;
+    top: 35%;
+    left: 45px;
   }
 `;
 
@@ -25,6 +25,7 @@ export const SocialIconItem = styled.li`
   text-align: center;
   margin-bottom: 10px;
   transition: all 0.3s;
+  color: rgba(51, 51, 51, 0.7);
 `;
 
 export const SocialIconText = styled.p`
@@ -32,7 +33,7 @@ export const SocialIconText = styled.p`
   left: -24px;
   width: 68px;
   height: 20px;
-  color: #000;
+  color: rgba(51, 51, 51, 0.7);
   font-size: 12px;
   font-weight: 600;
   line-height: 1.2;
@@ -48,39 +49,6 @@ export const SocialIconText = styled.p`
     content: "";
     display: block;
     position: absolute;
-    background-color: #000;
+    background-color: rgba(51, 51, 51, 0.7);
   }
 `;
-
-// @media only screen and (max-width: 991px) {
-//     .stick_follow_icon {
-//         width: unset;
-//         height: unset;
-//         position: static;
-//         margin-top: unset;
-//         display: flex;
-//         flex-direction: row-reverse;
-//         justify-content: center;
-//         padding: 40px 0;
-//         align-items: center;
-//     }
-//     .stick_follow_icon p {
-//         top: unset;
-//         left: unset;
-//         width: unset;
-//         height: unset;
-//         white-space: nowrap;
-//         position: relative;
-//         transform: unset;
-//         font-size: 17px;
-//         margin-right: 65px;
-//     }
-//     .stick_follow_icon ul {
-//         margin-bottom: 20px;
-//     }
-//     .stick_follow_icon ul li {
-//         display: inline;
-//         margin-bottom: 29px;
-//         margin-right: 10px;
-//     }
-// }

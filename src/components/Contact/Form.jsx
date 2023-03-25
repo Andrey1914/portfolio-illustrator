@@ -9,6 +9,9 @@ import {
   FormInput,
   FormTextarea,
   Button,
+  IconPerson,
+  IconEmail,
+  IconMessage,
 } from "./FormStyled";
 import { Section, Container } from "../LayoutStyled";
 
@@ -42,18 +45,21 @@ export const Form = () => {
         <FormContainer>
           <FormSubmission ref={formRef} onSubmit={handleSubmit}>
             <FormTitle>Contact me. </FormTitle>
+            <IconPerson />
             <FormInput
               type="text"
               placeholder="Your full name"
               name="user_name"
               required
             />
+            <IconEmail />
             <FormInput
               type="text"
               placeholder="Your email"
               name="user_email"
               required
             />
+            <IconMessage />
             <FormTextarea
               placeholder="Your message"
               rows="7"

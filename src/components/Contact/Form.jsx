@@ -6,6 +6,7 @@ import {
   FormTitle,
   FormSubmission,
   FormSpan,
+  InputContainer,
   FormInput,
   FormTextarea,
   Button,
@@ -45,27 +46,33 @@ export const Form = () => {
         <FormContainer>
           <FormSubmission ref={formRef} onSubmit={handleSubmit}>
             <FormTitle>Contact me. </FormTitle>
-            <IconPerson />
-            <FormInput
-              type="text"
-              placeholder="Your full name"
-              name="user_name"
-              required
-            />
-            <IconEmail />
-            <FormInput
-              type="text"
-              placeholder="Your email"
-              name="user_email"
-              required
-            />
-            <IconMessage />
-            <FormTextarea
-              placeholder="Your message"
-              rows="7"
-              name="message"
-              required
-            ></FormTextarea>
+            <InputContainer>
+              <IconPerson />
+              <FormInput
+                type="text"
+                placeholder="Your full name"
+                name="user_name"
+                required
+              />
+            </InputContainer>
+            <InputContainer>
+              <IconEmail />
+              <FormInput
+                type="text"
+                placeholder="Your email"
+                name="user_email"
+                required
+              />
+            </InputContainer>
+            <InputContainer>
+              <IconMessage />
+              <FormTextarea
+                placeholder="Your message"
+                rows="7"
+                name="message"
+                required
+              ></FormTextarea>
+            </InputContainer>
             <Button type="submit">Send message</Button>
             {message && <FormSpan>Thanks, I'll contact you shortly.</FormSpan>}
           </FormSubmission>

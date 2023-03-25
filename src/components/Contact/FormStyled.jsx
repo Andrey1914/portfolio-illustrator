@@ -19,7 +19,7 @@ export const FormContainer = styled.div`
 `;
 
 export const FormSubmission = styled.form`
-  position: relative;
+  /* position: relative; */
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
@@ -29,35 +29,63 @@ export const FormSpan = styled.span`
   font-size: 0.8rem;
 `;
 
+export const InputContainer = styled.div`
+  display: block;
+  position: relative;
+`;
+
 export const IconPerson = styled(AiOutlineUser)`
   color: rgba(0, 60, 103, 0.6);
   position: absolute;
-  top: 66px;
-  left: 15px;
+  top: 0.5rem;
+  left: 0.5rem;
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    top: 1.16rem;
+    left: 1rem;
+  }
 `;
 
 export const IconEmail = styled(AiOutlineMail)`
   color: rgba(0, 60, 103, 0.6);
   position: absolute;
-  top: 139px;
-  left: 15px;
+  top: 0.5rem;
+  left: 0.5rem;
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    top: 1.16rem;
+    left: 1rem;
+  }
 `;
 export const IconMessage = styled(AiOutlineMessage)`
   color: rgba(0, 60, 103, 0.6);
   position: absolute;
-  top: 211px;
-  left: 15px;
+  top: 0.5rem;
+  left: 0.5rem;
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    top: 1.16rem;
+    left: 1rem;
+  }
 `;
 
 export const FormInput = styled.input`
-  padding: 0.5rem 1rem;
+  width: 100%;
+  padding: 0.5rem 1.8rem;
   border-radius: 0.3rem;
   background: transparent;
+  transition: outline 100ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(0, 60, 103, 0.4);
   resize: none;
   color: #000;
   font-family: "Montserrat";
   font-size: 0.8rem;
+
+  :hover,
+  :focus {
+    outline: 3px solid rgba(0, 60, 103, 0.6);
+  }
+
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
     padding: 1rem 2.5rem;
     font-size: 1rem;
@@ -66,14 +94,22 @@ export const FormInput = styled.input`
 `;
 
 export const FormTextarea = styled.textarea`
-  padding: 0.5rem 1rem;
+  width: 100%;
+  padding: 0.5rem 1.8rem;
   border-radius: 0.3rem;
   background: transparent;
+  transition: outline 100ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(0, 60, 103, 0.4);
   resize: none;
   color: #000;
   font-family: "Montserrat";
   font-size: 0.8rem;
+
+  :hover,
+  :focus {
+    outline: 3px solid rgba(0, 60, 103, 0.6);
+  }
+
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
     padding: 1rem 2.5rem;
     font-size: 1rem;

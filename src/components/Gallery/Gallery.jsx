@@ -9,7 +9,7 @@ export default function Gallery() {
     <SectionStyled>
       <Section id="gallery">
         <Container>
-          <Title>...the pictures i've been working on...</Title>
+          <Title>...the pictures I've been working on...</Title>
           <ReactImageGallery items={images} />
         </Container>
       </Section>

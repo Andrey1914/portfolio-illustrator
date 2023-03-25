@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrap = styled.div`
   padding: 30px 0 90px;
-  @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     padding: 30px 0;
   }
 `;

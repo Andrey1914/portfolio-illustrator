@@ -25,8 +25,12 @@ export const AboutBody = styled.div`
   gap: 1rem;
   margin: 0 auto;
 
-  @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
     flex-direction: row;
+    gap: 2rem;
+  }
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     gap: 3rem;
     width: calc(100% - 300px);
   }
@@ -35,7 +39,7 @@ export const AboutBody = styled.div`
 export const Photo = styled.img`
   width: 200px;
   height: auto;
-  @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     width: 300px;
   }
 `;
@@ -45,7 +49,7 @@ export const AboutContent = styled.div`
   font-size: 18px;
   line-height: 1.5;
   font-weight: 400;
-  @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     font-size: 24px;
   }
 `;

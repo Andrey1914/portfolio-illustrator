@@ -1,25 +1,27 @@
 export const theme = {
   fonts: {
     montserrat: "'Montserrat', sans-serif",
+    badScript: "'Bad Script', sans-sarif",
   },
-  backgroundColor: {
-    dark: "#0d0e0e",
-    light: "#ffffff",
-    orange: "#e64e04",
-    darkGray: "#111",
+  linearGradient: {
+    gray: "linear-gradient(45deg, #f0f0f0, #929292)",
+    lightGray: "linear-gradient(45deg, #f0f0f0, #cecece)",
+    brown: "linear-gradient(45deg, #af6600, #787878)",
   },
   color: {
-    dark: "#000000",
     darkGray: "#262637",
-    lightGray: "#aaa",
+    lightGray: "rgba(51, 51, 51, 0.7)",
+    accent: "rgba(0, 60, 103, 0.6)",
     light: "#fff",
-    secondaryLight: "#f1f1f1",
-    tertiaryLight: "#d3d3d3",
-    link: "#4353ff",
   },
-  CTA: {
-    primary: "#e64e04",
-    secondary: "#4353ff",
+  border: {
+    sm: "0.5px solid",
+    md: "3px solid",
+  },
+  shadow: {
+    textShadow:
+      "0px 3px 0px #b2a98f, 0px 14px 10px rgba(0, 0, 0, 0.15), 0px 24px 2px rgba(0, 0, 0, 0.1), 0px 34px 30px rgba(0, 0, 0, 0.1)",
+    boxShadow: "rgba(33, 35, 38, 0.2) 0 10px 10px -5px",
   },
   breakpoints: {
     lg: "1280px",

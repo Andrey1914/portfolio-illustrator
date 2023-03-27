@@ -29,7 +29,7 @@ export const NavLink = styled.a`
     background: rgba(0, 60, 103, 0.4);
   }
   :active {
-    background: rgba(0, 60, 103, 0.6);
-    color: #fff;
+    background: ${({ theme }) => theme.color.accent};
+    color: ${({ theme }) => theme.color.light};
   }
 `;

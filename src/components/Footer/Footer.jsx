@@ -1,4 +1,4 @@
-import { Copyright, Wrap } from "./Footer.styled";
+import { Copyright, Wrap, GitHubLink } from "./Footer.styled";
 import { BsGithub } from "react-icons/bs";
 import { Container } from "../LayoutStyled";
 
@@ -10,13 +10,13 @@ export default function Footer() {
         <Container>
           <Copyright>
             &copy; Copyright {year} by
-            <a
+            <GitHubLink
               href="https://github.com/Andrey1914"
               target="_blank"
               rel="noopener noreferrer"
             >
               <BsGithub size={24} />
-            </a>
+            </GitHubLink>
           </Copyright>
         </Container>
       </Wrap>

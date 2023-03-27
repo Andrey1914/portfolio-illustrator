@@ -28,6 +28,13 @@ export const SocialIconItem = styled.li`
   color: rgba(51, 51, 51, 0.7);
 `;
 
+export const SocialLink = styled.a`
+  :hover,
+  :focus {
+    color: rgba(0, 60, 103, 0.6);
+  }
+`;
+
 export const SocialIconText = styled.p`
   top: 70px;
   left: -24px;

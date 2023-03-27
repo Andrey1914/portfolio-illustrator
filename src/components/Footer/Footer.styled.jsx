@@ -13,9 +13,17 @@ export const Copyright = styled.p`
   gap: 0.5rem;
   font-size: 12px;
   text-align: left;
+  color: rgba(51, 51, 51, 0.7);
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
     gap: 0.5rem;
     font-size: 16px;
+  }
+`;
+
+export const GitHubLink = styled.a`
+  :hover,
+  :focus {
+    color: rgba(0, 60, 103, 0.6);
   }
 `;

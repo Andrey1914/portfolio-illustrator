@@ -11,6 +11,7 @@ import {
   StickFollowIcon,
   SocialIconList,
   SocialIconItem,
+  SocialLink,
   SocialIconText,
 } from "./SocialIconStyled";
 
@@ -19,30 +20,30 @@ export const SocialIcons = () => {
     <StickFollowIcon>
       <SocialIconList>
         <SocialIconItem>
-          <a href="https://instagram.com/tania.proskurnia?utm_medium=copy_link">
+          <SocialLink href="https://instagram.com/tania.proskurnia?utm_medium=copy_link">
             <FaInstagram size={18} />
-          </a>
+          </SocialLink>
         </SocialIconItem>
 
         <SocialIconItem>
-          <a href="https://www.facebook.com/tania.proskurnia">
+          <SocialLink href="https://www.facebook.com/tania.proskurnia">
             <FaFacebookF size={18} />
-          </a>
+          </SocialLink>
         </SocialIconItem>
         <SocialIconItem>
-          <a href="https://www.linkedin.com/in/%D1%82%D0%B0%D0%BD%D1%8F-%D0%BF%D1%80%D0%BE%D1%81%D0%BA%D1%83%D1%80%D0%BD%D1%8F-301123238/">
+          <SocialLink href="https://www.linkedin.com/in/%D1%82%D0%B0%D0%BD%D1%8F-%D0%BF%D1%80%D0%BE%D1%81%D0%BA%D1%83%D1%80%D0%BD%D1%8F-301123238/">
             <FaLinkedinIn size={18} />
-          </a>
+          </SocialLink>
         </SocialIconItem>
         <SocialIconItem>
-          <a href="https://t.me/Tania_Proskurnia">
+          <SocialLink href="https://t.me/Tania_Proskurnia">
             <FaTelegramPlane size={18} />
-          </a>
+          </SocialLink>
         </SocialIconItem>
         <SocialIconItem>
-          <a href="viber://chat?number=+380934846750">
+          <SocialLink href="viber://chat?number=+380934846750">
             <FaViber size={18} />
-          </a>
+          </SocialLink>
         </SocialIconItem>
       </SocialIconList>
       <SocialIconText>Follow me</SocialIconText>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SectionStyled = styled.div`
-  background: linear-gradient(45deg, #af6600, #787878); ;
+  background: ${({ theme }) => theme.linearGradient.brown};
 `;
 
 export const AboutHeader = styled.div`
@@ -9,13 +9,15 @@ export const AboutHeader = styled.div`
 `;
 
 export const AboutTitle = styled.h2`
-  font-family: "Bad Script";
-  font-size: 18px;
+  font-family: ${({ theme }) => theme.fonts.badScript};
+  font-size: 1.2rem;
   line-height: 1.5;
   font-weight: 400;
   text-align: right;
+  color: ${({ theme }) => theme.color.darkGray};
+
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
-    font-size: 24px;
+    font-size: 1.6rem;
   }
 `;
 
@@ -45,11 +47,11 @@ export const Photo = styled.img`
 `;
 
 export const AboutContent = styled.div`
-  font-family: "Bad Script";
-  font-size: 18px;
+  font-family: ${({ theme }) => theme.fonts.badScript};
+  font-size: 1.2rem;
   line-height: 1.5;
   font-weight: 400;
   @media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-    font-size: 24px;
+    font-size: 1.6rem;
   }
 `;

@@ -2,9 +2,10 @@ import styled from "styled-components";
 import { AiOutlineUser, AiOutlineMail, AiOutlineMessage } from "react-icons/ai";
 
 export const FormTitle = styled.h3`
-  font-family: "Montserrat";
+  font-family: ${({ theme }) => theme.fonts.montserrat};
   font-size: 1.5rem;
   text-align: center;
+  color: ${({ theme }) => theme.color.darkGray};
 `;
 
 export const FormContainer = styled.div`
@@ -19,7 +20,6 @@ export const FormContainer = styled.div`
 `;
 
 export const FormSubmission = styled.form`
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
@@ -35,7 +35,7 @@ export const InputContainer = styled.div`
 `;
 
 export const IconPerson = styled(AiOutlineUser)`
-  color: rgba(0, 60, 103, 0.6);
+  color: ${({ theme }) => theme.color.lightGray};
   position: absolute;
   top: 0.5rem;
   left: 0.5rem;
@@ -47,7 +47,7 @@ export const IconPerson = styled(AiOutlineUser)`
 `;
 
 export const IconEmail = styled(AiOutlineMail)`
-  color: rgba(0, 60, 103, 0.6);
+  color: ${({ theme }) => theme.color.lightGray};
   position: absolute;
   top: 0.5rem;
   left: 0.5rem;
@@ -58,7 +58,7 @@ export const IconEmail = styled(AiOutlineMail)`
   }
 `;
 export const IconMessage = styled(AiOutlineMessage)`
-  color: rgba(0, 60, 103, 0.6);
+  color: ${({ theme }) => theme.color.lightGray};
   position: absolute;
   top: 0.5rem;
   left: 0.5rem;
@@ -75,15 +75,17 @@ export const FormInput = styled.input`
   border-radius: 0.3rem;
   background: transparent;
   transition: outline 100ms cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid rgba(0, 60, 103, 0.4);
+  border: ${({ theme }) => theme.border.sm};
+  border-color: ${({ theme }) => theme.color.lightGray};
   resize: none;
-  color: #000;
-  font-family: "Montserrat";
+  color: ${({ theme }) => theme.color.darkGray};
+  font-family: ${({ theme }) => theme.fonts.montserrat};
   font-size: 0.8rem;
 
   :hover,
   :focus {
-    outline: 3px solid rgba(0, 60, 103, 0.6);
+    outline: ${({ theme }) => theme.border.md};
+    outline-color: ${({ theme }) => theme.color.accent};
   }
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
@@ -99,15 +101,17 @@ export const FormTextarea = styled.textarea`
   border-radius: 0.3rem;
   background: transparent;
   transition: outline 100ms cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid rgba(0, 60, 103, 0.4);
+  border: ${({ theme }) => theme.border.sm};
+  border-color: ${({ theme }) => theme.color.lightGray};
   resize: none;
-  color: #000;
-  font-family: "Montserrat";
+  color: ${({ theme }) => theme.color.darkGray};
+  font-family: ${({ theme }) => theme.fonts.montserrat};
   font-size: 0.8rem;
 
   :hover,
   :focus {
-    outline: 3px solid rgba(0, 60, 103, 0.6);
+    outline: ${({ theme }) => theme.border.md};
+    outline-color: ${({ theme }) => theme.color.accent};
   }
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
@@ -126,14 +130,14 @@ export const Button = styled.button`
   border: none;
   transition: all 400ms ease;
   background-color: rgba(0, 60, 103, 0.4);
-  color: #fff;
+  color: ${({ theme }) => theme.color.light};
   margin: 0 auto;
-  font-family: "Montserrat";
+  font-family: ${({ theme }) => theme.fonts.montserrat};
   font-size: 0.8rem;
 
   :hover {
-    background-color: rgba(0, 60, 103, 0.6);
-    color: #fff;
+    background-color: ${({ theme }) => theme.color.accent};
+    color: ${({ theme }) => theme.color.light};
   }
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
     padding: 0.75rem 1.2rem;

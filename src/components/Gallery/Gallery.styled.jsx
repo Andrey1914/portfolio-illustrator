@@ -1,18 +1,17 @@
-// import styled from "@emotion/styled";
 import styled from "styled-components";
 
 export const SectionStyled = styled.div`
-  box-shadow: rgba(33, 35, 38, 0.2) 0 10px 10px -5px;
-  background: linear-gradient(45deg, #f0f0f0, #cecece);
+  box-shadow: ${({ theme }) => theme.shadow.boxShadow};
+  background: ${({ theme }) => theme.linearGradient.lightGray};
 `;
 
 export const Title = styled.h2`
-  font-family: "Montserrat";
-  font-size: 18px;
+  font-family: ${({ theme }) => theme.fonts.montserrat};
+  font-size: 1.2rem;
   text-align: right;
-  text-shadow: 0px 3px 0px #b2a98f, 0px 14px 10px rgba(0, 0, 0, 0.15),
-    0px 24px 2px rgba(0, 0, 0, 0.1), 0px 34px 30px rgba(0, 0, 0, 0.1);
+  text-shadow: ${({ theme }) => theme.shadow.textShadow};
   padding: 1.5rem 0;
+  color: ${({ theme }) => theme.color.darkGray};
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
     padding: 2rem 0;
   }

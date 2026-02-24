@@ -1,64 +1,37 @@
+import bear1 from "../../jpg/bear-d1x.jpg";
+import bear2 from "../../jpg/bear-d2x.jpg";
+
+import medvedi from "../../jpg/медведи.jpg";
+import lenivec from "../../jpg/ленивец.jpg";
+import ezhiki from "../../jpg/ежики.jpg";
+import porosyata from "../../jpg/поросята.jpg";
+import semeyka from "../../jpg/дружная-семейка.jpg";
+import babushka from "../../jpg/бабушка.jpg";
+import girlDog from "../../jpg/девочка-гуляет-с-собакой.jpg";
+import girlTree from "../../jpg/девочка-на-дереве.jpg";
+import girlWindow from "../../jpg/девочка-на-подоконнике.jpg";
+import girl from "../../jpg/девочка.jpg";
+import dyadya from "../../jpg/дядя.jpg";
+import school from "../../jpg/школьники.jpg";
+import chicks from "../../jpg/циплята.jpg";
+import family from "../../jpg/семья-собралась-вместе.jpg";
+
 const images = [
-  {
-    original: require("../../jpg/bear-d1x.jpg"),
-    thumbnail: require("../../jpg/bear-d2x.jpg"),
-  },
-  {
-    original: require("../../jpg/медведи.jpg"),
-    thumbnail: require("../../jpg/медведи.jpg"),
-  },
-  {
-    original: require("../../jpg/ленивец.jpg"),
-    thumbnail: require("../../jpg/ленивец.jpg"),
-  },
-  {
-    original: require("../../jpg/ежики.jpg"),
-    thumbnail: require("../../jpg/ежики.jpg"),
-  },
-  {
-    original: require("../../jpg/поросята.jpg"),
-    thumbnail: require("../../jpg/поросята.jpg"),
-  },
-  {
-    original: require("../../jpg/дружная-семейка.jpg"),
-    thumbnail: require("../../jpg/дружная-семейка.jpg"),
-  },
-  {
-    original: require("../../jpg/бабушка.jpg"),
-    thumbnail: require("../../jpg/бабушка.jpg"),
-  },
-  {
-    original: require("../../jpg/девочка-гуляет-с-собакой.jpg"),
-    thumbnail: require("../../jpg/девочка-гуляет-с-собакой.jpg"),
-  },
-  {
-    original: require("../../jpg/девочка-на-дереве.jpg"),
-    thumbnail: require("../../jpg/девочка-на-дереве.jpg"),
-  },
-  {
-    original: require("../../jpg/девочка-на-подоконнике.jpg"),
-    thumbnail: require("../../jpg/девочка-на-подоконнике.jpg"),
-  },
-  {
-    original: require("../../jpg/девочка.jpg"),
-    thumbnail: require("../../jpg/девочка.jpg"),
-  },
-  {
-    original: require("../../jpg/дядя.jpg"),
-    thumbnail: require("../../jpg/дядя.jpg"),
-  },
-  {
-    original: require("../../jpg/школьники.jpg"),
-    thumbnail: require("../../jpg/школьники.jpg"),
-  },
-  {
-    original: require("../../jpg/циплята.jpg"),
-    thumbnail: require("../../jpg/циплята.jpg"),
-  },
-  {
-    original: require("../../jpg/семья-собралась-вместе.jpg"),
-    thumbnail: require("../../jpg/семья-собралась-вместе.jpg"),
-  },
+  { original: bear1, thumbnail: bear2 },
+  { original: medvedi, thumbnail: medvedi },
+  { original: lenivec, thumbnail: lenivec },
+  { original: ezhiki, thumbnail: ezhiki },
+  { original: porosyata, thumbnail: porosyata },
+  { original: semeyka, thumbnail: semeyka },
+  { original: babushka, thumbnail: babushka },
+  { original: girlDog, thumbnail: girlDog },
+  { original: girlTree, thumbnail: girlTree },
+  { original: girlWindow, thumbnail: girlWindow },
+  { original: girl, thumbnail: girl },
+  { original: dyadya, thumbnail: dyadya },
+  { original: school, thumbnail: school },
+  { original: chicks, thumbnail: chicks },
+  { original: family, thumbnail: family },
 ];
 
 export default images;
